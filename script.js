@@ -1,5 +1,9 @@
-let gridsize = 16    
-const container = document.getElementById("container");
+let gridsize 
+document.getElementById("sizebutton").onclick = () => {
+    gridsize = document.getElementById("sizeInput").value
+    // console.log(gridsize)
+    reset()
+    const container = document.getElementById("container");
 for (let i = 0; i < gridsize*gridsize ; i++) {
     const grid = document.createElement("div");
     grid.classList.add("grids");
@@ -12,8 +16,21 @@ const grids = document.querySelectorAll(".grids");
 grids.forEach((grid)=>{
     grid.addEventListener("mouseover", () => {
         grid.style.backgroundColor = "red";
-        console.log("grid.id");
+        // console.log("grid.id");
     })
 })
+}
 
-console.log('Script loaded and event listeners added');
+
+
+
+
+
+function reset(){
+    const container = document.getElementById("container");
+    let child = container.lastChild;
+    while(child){
+        container.removeChild(child);
+        child = container.lastChild;
+    }
+}
