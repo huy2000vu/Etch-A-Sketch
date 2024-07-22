@@ -4,7 +4,14 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
+#Etch-A-Sketch{
+    display: flex;
+}
+#settings{
+    display: flex;
+    margin-left: 10vh;
+    flex-direction: column;
+}
 #name {
     font-size: 24px;
     /* text-align: center; */
@@ -16,7 +23,7 @@ body {
     flex-wrap: wrap;
     height: 600px;
     width: 600px;
-    border: red 1px solid;
+    border: black 1px solid;
 }
 
 .grids{
@@ -24,5 +31,5 @@ body {
     border: 0;
     /* flex: 0 0 calc(100% / 16); */
     /* height: calc(100% / 16); */
-    background-color: lightblue;
+    background-color:lightpink;
 }

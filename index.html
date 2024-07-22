@@ -12,9 +12,18 @@
 <div id="Etch-A-Sketch">
     <div id="container"></div>
 <div id="settings">
-    <label>Dimension(1-100):</label>
-    <input type="range" id="sizeInput" min="1" max="100" value="20">
-    <button id="sizebutton" type="button">Submit</button>
+    <div id="sizeSettings">
+        <label id="sizelabel">Dimension:</label>
+        <output id="sizeIndicator">0</output>
+        <input type="range" id="sizeInput" oninput="document.getElementById('sizeIndicator').value = this.value" min="1" max="100" value="20">
+        <button id="sizebutton" type="button">Generate</button>
+    <div id="colorSettings">
+        <label id="colorlabel">Paint Color:</label>
+        <input type="color" id="paintcolorInput">
+        <label id="colorlabel">Paint Color:</label>
+        <input type="color" id="BackgroundColorInput">
+    </div>
+   
 </div>
 </div>
 </body>
