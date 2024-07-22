@@ -14,15 +14,20 @@
 <div id="settings">
     <div id="sizeSettings">
         <label id="sizelabel">Dimension:</label>
-        <output id="sizeIndicator">0</output>
-        <input type="range" id="sizeInput" oninput="document.getElementById('sizeIndicator').value = this.value" min="1" max="100" value="20">
+        <output id="sizeIndicator">16</output>
+        <input type="range" id="sizeInput" oninput="document.getElementById('sizeIndicator').value = this.value" min="1" max="100" value="16">
         <button id="sizebutton" type="button">Generate</button>
     <div id="colorSettings">
         <label id="colorlabel">Paint Color:</label>
         <input type="color" id="paintcolorInput">
-        <label id="colorlabel">Paint Color:</label>
+        <label id="colorlabel">Background Color:</label>
         <input type="color" id="BackgroundColorInput">
     </div>
+    <div id="RandomColorSettings ">
+        <label id="randomColorlabel">Random Color:</label>
+        <input type="checkbox" id="randomColorBoolInput">
+    </div>
+
    
 </div>
 </div>
