@@ -1,6 +1,6 @@
 let gridsize 
 //random color enabled
-const RandomColorInput = document.getElementById('randomColorBoolInput');
+let isRandomPaintColor = document.getElementById('randomColorBoolInput');
 document.getElementById("sizebutton").onclick = () => {
     gridsize = document.getElementById("sizeInput").value
     reset()
@@ -19,7 +19,7 @@ function createGrids(size){
 const grids = document.querySelectorAll(".grids");
 grids.forEach((grid)=>{
     grid.addEventListener("mouseover", () => {
-        if(RandomColorInput.value) {
+        if(isRandomPaintColor.checked) {
             grid.style.backgroundColor = getRandomColor();
         }
         else{
